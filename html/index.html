@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../style/common.css">
+</head>
+<body>
+    <div class="note_parent">
+    <div class="note">
+        <div class="note_detail">
+            <span>网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！</span>
+            <a>立即查看></a>
+        </div>
+        <div class="note_close">
+            <a id="closeRemind">×不再提醒</a>
+        </div>
+    </div>
+    </div>
+    <div class="head">
+        <div class="head_title">
+            <div class="title_name">
+                <img src="../images/logo1.png">
+            </div>
+        </div>
+        <div  class="head_title">
+            <div id="follow_contain">
+                <button  class="listen" id="follow">+&nbsp关注</button>
+            </div>
+            <div class="fans">
+                <span>粉丝45</span>
+            </div>
+        </div>
+        <ul class="head_list">
+            <li class="search"><a><img src="../images/search.jpg"></a></li>
+            <li><a href="http://www.icourse163.org/">中国大学MOOC</a></li>
+            <li class="list_middle"><a href="http://study.163.com/">云课堂</a></li>
+            <li><a href="http://open.163.com/">网易公开课</a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <ul class="imglist">
+            <li class="imgOn"><a href="http://open.163.com/"><img src="../images/banner1.jpg"></a></li>
+            <li><a href="http://study.163.com/"><img src="../images/banner2.jpg"></a></li>
+            <li><a href="http://www.icourse163.org/"><img src="../images/banner3.jpg"></a></li>
+        </ul>
+        <ul class="infolist">
+            <li><span class="infoOn"></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+        </ul>
+    </div>
+    <div class="course_decri">
+        <div>
+            <div class="course_icon">
+                <img src="../images/openClass.png">
+            </div>
+            <div class="description">
+                <h2>网易公开课</h2>
+                <p>
+                    推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。
+                </p>
+                <a>了解更多></a>
+            </div>
+        </div>
+        <div class="course_decri_2">
+            <div class="course_icon">
+                <img src="../images/onlineClass.png">
+            </div>
+            <div class="description">
+                <h2>云课堂</h2>
+                <p>
+                    网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。
+                </p>
+                <a>了解更多></a>
+            </div>
+        </div>
+        <div>
+            <div class="course_icon">
+                <img src="../images/university.png">
+            </div>
+            <div class="description">
+                <h2>中国大学MOOC</h2>
+                <p>
+                    是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。
+                </p>
+                <a>了解更多></a>
+            </div>
+        </div>
+    </div>
+    <div class="work_house">
+        <div class="house_pic">
+            <img src="../images/picture1.jpg">
+            <img src="../images/picture2.jpg">
+            <img src="../images/picture3.jpg">
+            <img src="../images/picture4.jpg">
+            <img src="../images/picture5.jpg">
+        </div>
+    </div>
+    <div class="course">
+        <div class="course_left">
+            <div class="course_title">
+                <a class="onType" id="product">产品设计</a><a id="program">编程语言</a>
+            </div>
+            <div class="course_list">
+
+            </div>
+        </div>
+        <div class="course_right">
+            <div class="course_right_content">
+                <div class="title4"><h4>机构介绍</h4></div>
+            </div>
+            <div class="course_right_content">
+                <div class="title5"><h5>观看下面的视频来了解吧：</h5></div>
+                <div class="video"><a id="openVideo"><img src="../images/videoplay.jpg"></a></div>
+            </div>
+            <div class="course_right_content rank_title">
+                <div class="title4"><h4>最热排行</h4></div>
+            </div>
+            <div class="course_right_content rank_content">
+                <div class="rank_list_one" style="top:0"></div>
+                <div class="rank_list_two"  style="top:700px"></div>
+            </div>
+        </div>
+    </div>
+    <div class="login hidden" id="loginWindow">
+        <div class="loginForm">
+            <form>
+                <h3>登录网易云课堂</h3>
+                <input type="text" placeholder="账号" class="login_input" id="userName" autocomplete="on">
+                <input type="password" placeholder="密码" class="login_input" id="passWord" autocomplete="on">
+            </form>
+            <button id="loginBtn" class="login_btn" onclick="login()">登录</button>
+            <div class="close" id="closeBtn">×</div>
+        </div>
+    </div>
+    <div class="videoPlayBg hidden">
+        <div class="videoPlay">
+            <h4>
+                请观看下面的视频
+            </h4>
+            <div>
+                <video src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" width="888px" height="548px" controls="controls" preload="metadata">
+                </video>
+            </div>
+            <div class="close" id="closeVideo">×</div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot_content">
+            <div class="netease">
+                <h2>
+                    <img src="../images/logo2.png">
+                </h2>
+                <p>
+                    ©2014 icourse163.org 浙ICP备08114786号-1
+                </p>
+                <p>
+                    icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2
+                </p>
+            </div>
+            <div class="link">
+                <ul class="link_list">
+                    <li>友情链接：</li>
+                    <li><a>网易公开课</a></li>
+                    <li><a>云课堂</a></li>
+                    <li><a>中国大学MOOC</a></li>
+                </ul>
+                <ul class="link_list link_list_2">
+                    <li>我们：</li>
+                    <li><a>关于</a></li>
+                    <li><a>联系</a></li>
+                    <li><a>关注</a></li>
+                </ul>
+                <ul class="link_list">
+                    <li>更多：</li>
+                    <li><a>常见问题</a></li>
+                    <li><a>意见反馈</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script src="../js/md5.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/init.js"></script>
+</body>
+</html>
