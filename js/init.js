@@ -102,7 +102,8 @@ getCourse(1,20,10);
             hotCourseScroll(rankTwo);
         },5000);
     }
-    var url='http://study.163.com/webDev/hotcouresByCategory.htm';
+    //var url='http://study.163.com/webDev/hotcouresByCategory.htm';
+    var url = '../json/hotcoures.json';
     Ajax.get(url,initHotCourse);
 })();
 
@@ -124,14 +125,15 @@ getCourse(1,20,10);
         userName=hex_md5(userName);
         var password=getElement('#passWord').value;
         password=hex_md5(password);
-        var url='http://study.163.com/webDev/login.htm?userName='+userName+'&password='+password;
+        //var url='http://study.163.com/webDev/login.htm?userName='+userName+'&password='+password;
+        var url = '../json/login';
         Ajax.get(url,function(data){
             //登陆成功隐藏登陆窗口，设置登陆成功cookie
             if(data==1){
                 Cookie.setCookie('loginSuc','success',7);
                 var loginWindow=getElement('.login')[0];
                 loginWindow.className='login hidden';
-                alert('登录成功');
+                //alert('登录成功');
             }
             if(data==0){
                 alert('用户名或密码错误');

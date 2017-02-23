@@ -167,7 +167,8 @@ function getCourse(pageNo,psize,type){
         //鼠标悬停事件
         hover();
     };
-    var url='http://study.163.com/webDev/couresByCategory.htm?'+"pageNo="+pageNo+'&'+"psize="+psize+'&'+"type="+type;
+    //var url='http://study.163.com/webDev/couresByCategory.htm?'+"pageNo="+pageNo+'&'+"psize="+psize+'&'+"type="+type;
+    var url = '../json/courses.json'
     Ajax.get(url,initCourse);
 }
 //鼠标悬停显示课程的详细信息
